@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomExtensionTitle</title>
+
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/datepicker.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/toastr.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+</head>
+
+<body>
+
+    <div class="body_wrapper">
+
+        <div class="search_wrapper">
+            <form action="#" class="search_inner_wrapper">
+                <input name="q" type="text" class="search_input" placeholder="Typing..." id="search_input">
+                <img src="./images/search.svg" alt="Search icon" class="search_icon">
+            </form>
+        </div>
+
+        <div class="buttons_wrapper">
+
+            <div class="control_button" id="create_card_button">
+                <img src="./images/add_button.svg" alt="Add button icon">
+                <div class="cb_text">Add new counter</div>
+            </div>
+
+            <!-- <div class="control_button" id="filter_counters_button">
+                <img src="./images/filter_button.svg" alt="Filter button icon">
+                <div class="cb_text">Filter Counters</div>
+            </div> -->
+
+        </div>
+
+        <div class="cards_wrapper" id="cards_wrapper"></div>
+
+    </div>
+
+    <!-- Add card modal -->
+    <div class="modal fade" id="add_card_modal" tabindex="-1" role="dialog" aria-labelledby="add_card_modal_label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add_card_modal_label">Add card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-body-wrapper">
+                        <input type="text" name="card_title" placeholder="Card title">
+                        <input type="text" name="card_date" id="add_datepicker" placeholder="Select date" autocomplete="off">
+                        <input type="text" name="card_desc" placeholder="Card description">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="confirm_add_modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/propper.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/datepicker.js"></script>
+    <script src="./scripts/toasts.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

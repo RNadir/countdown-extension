@@ -1,0 +1,185 @@
+.popup {
+    width: 280px;
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(23, 23, 31);
+    color: white;
+}
+
+.header h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 125.83deg, rgb(57, 45, 209) 0%, rgb(169, 27, 120) 99.09%);
+    border-radius: 15px;
+    color: white;
+}
+
+.content .row {
+    background: rgb(30, 32, 41);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.content {
+    width: 100%;
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 15px;
+}
+
+.row {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.row i {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.row p {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.row:hover {
+    transform: scale(1.05);
+}
+
+.download-content {
+    position: absolute;
+    transition: 0.2s;
+    width: 100%;
+    right: calc(-100% - 15px);
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-content i {
+    margin-left: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 30px;
+}
+
+.download-active {
+    right: 0 !important;
+}
+
+.button-clicked {
+    transform: scale(0.95);
+}
+
+.button-larger:hover {
+    transform: scale(1.05);
+}
+
+.content-inactive {
+    left: calc(-100% - 15px) !important;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+#file {
+    display: none;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.upload-button-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-button,
+.download-button {
+    width: 90%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #4c54d2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.upload-button p {
+    font-size: 16px;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+}
+
+.download-button {
+    background-color: rgb(169, 27, 120);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.download-button p {
+    font-size: 16px;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.added-files {
+    display: flex;
+    align-items: center;
+}
+
+.added-files i {
+    font-size: 15px;
+    cursor: default;
+    width: 22px;
+    color: lightgreen;
+}
+
+.added-files p {
+    font-size: 13px;
+}
+
+.new-element-container {
+    display: "flex";
+    flex-direction: column;
+}
+
+.conversion-name {
+    text-align: center;
+    font-size: 17px;
+    margin-block-end: 0.5rem;
+}

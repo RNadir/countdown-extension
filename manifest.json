@@ -1,0 +1,31 @@
+{
+    "name": "RandomName",
+    "description": "Random description on this shiw",
+    "version": "1.0",
+    "manifest_version": 3,
+    "homepage_url": "https://google.com",
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "./page/index.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images/favicon.png",
+            "32": "./images/favicon.png",
+            "48": "./images/favicon.png",
+            "128": "./images/favicon.png"
+        }
+    },
+    "icons": {
+        "16": "./images/favicon.png",
+        "32": "./images/favicon.png",
+        "48": "./images/favicon.png",
+        "128": "./images/favicon.png"
+    }
+}
