@@ -1,167 +1,287 @@
 @font-face {
     font-family: roboto-black;
-    src: url(../fonts/Roboto-Black.ttf);
+    src: url(../fonts/Roboto-Black.ttf)
 }
+
 @font-face {
     font-family: roboto-bold;
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf)
 }
+
 @font-face {
     font-family: roboto-light;
-    src: url(../fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf)
 }
+
 @font-face {
     font-family: roboto-medium;
-    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Medium.ttf)
 }
+
 @font-face {
     font-family: roboto-regular;
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf)
 }
+
 @font-face {
     font-family: roboto-thin;
-    src: url(../fonts/Roboto-Thin.ttf);
+    src: url(../fonts/Roboto-Thin.ttf)
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
-body{
-    background-image: url("../images/bg_extension.jpg");
+body {
+    background-image: url(../images/bg_extension.jpg)
 }
 
-.body_wrapper{
+.body_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     max-width: 1600px;
     margin: auto;
+    min-height: 100vh;
 }
 
-
-
-.search_wrapper{
-    margin-top: 200px;
+.search_wrapper {
+    margin-top: 200px
 }
 
-.search_inner_wrapper{
+.search_inner_wrapper {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center
 }
 
-.search_icon{
+.search_icon {
     position: absolute;
     cursor: pointer;
-
-    right: 15px;
+    right: 15px
 }
 
-.search_input{
+.search_input {
     width: 880px;
-    padding: 20px 0px;
+    padding: 20px 0;
     padding-left: 50px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
     border-radius: 32px;
-    border: none;
+    border: none
 }
 
-
-
-.buttons_wrapper{
+.buttons_wrapper {
     display: flex;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
-.cb_text{
-    
+.cb_text {
     font-family: roboto-regular;
     font-size: 16px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-left: 10px;
+    margin-left: 10px
 }
 
-.control_button{
-    
+.control_button {
     display: flex;
-    background-color: white;
-    
+    background-color: #fff;
     padding: 15px;
-    margin: 0px 15px;
-    
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    margin: 0 15px;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
     border-radius: 32px;
-
     width: 230px;
-
-    cursor: pointer;
+    cursor: pointer
 }
 
-
-
-.cards_wrapper{
+.cards_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
-.card_buttons{
+.card_buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
-.card_buttons_button{
+.card_buttons_button {
     margin: 10px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.card{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 12px 12px #00000029;
+.card {
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0 12px 12px #00000029;
     border-radius: 32px;
     border: none;
-
     margin: 20px;
-
     padding: 20px;
     width: 370px;
-    height: auto;
+    height: auto
 }
 
-.card_title{
+.card_title {
     font-family: roboto-medium;
     margin-top: 15px;
     font-size: 20px;
-    color: #000000DE;
+    color: #000000de
 }
 
-.card_title, .card_number, .card_description{
-    text-align: center;
+.card_title,
+.card_number,
+.card_description {
+    text-align: center
 }
 
-.card_number{
+.card_number {
     font-family: roboto-light;
     font-size: 96px;
-    margin: 15px 0px;
-    color: #365EE3;
+    margin: 15px 0;
+    color: #365ee3
 }
 
-.card_description{
+.card_description {
     font-family: roboto-regular;
     font-size: 16px;
-    color: #000000DE;
+    color: #000000de
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px
+}
+
+.header_buttons {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly
+}
+
+.header_logo {
+    width: 100%;
+    max-width: 300px
+}
+
+.header_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.header_buttons_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.header_buttons_button:hover {
+    color: #4762ae
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.footer_links_wrapper {
+    /* color:blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer_link {
+    /* color:red; */
+    margin: 5px 0px;
+}
+
+.footer_disclaimer {
+    color: #007bff
+}
+
+@media screen and (max-width: 900px) {
+    .search_input{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .search_input{
+        width: 400px;
+        padding: 15px 0;
+        padding-left: 30px;
+    }
+
+    .search_wrapper{
+        margin-top: 100px;
+    }
+
+    .header_buttons_button{
+        font-size: 15px;
+    }
+
+    .header_buttons{
+        width: 250px;
+    }
+
+    .header_logo{
+        width: 215px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header_wrapper{
+        flex-direction: column;
+    }
+
+    .header_buttons{
+        justify-content: flex-start;
+    }
+
+    .header_buttons_button{
+        margin-right: 10px;
+    }
+
+    .search_input{
+        width: 300px;
+    }
+
+    .search_wrapper{
+        margin-top: 50px;
+    }
+
+    .card{
+        width: 280px;
+    }
+
+    .cb_text{
+        font-size: 15px;
+    }
+
+    .control_button{
+        width: 190px;
+    }
+
+    .footer_wrapper{
+        font-size: 15px;
+    }
 }

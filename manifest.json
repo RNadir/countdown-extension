@@ -1,9 +1,9 @@
 {
-    "name": "RandomName",
+    "name": "Clicounter",
     "description": "Random description on this shiw",
     "version": "1.0",
     "manifest_version": 3,
-    "homepage_url": "https://google.com",
+    "homepage_url": "https://clicounter.live",
     "background": {
         "service_worker": "./background.js"
     },
@@ -16,16 +16,16 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "./images/favicon.png",
-            "32": "./images/favicon.png",
-            "48": "./images/favicon.png",
-            "128": "./images/favicon.png"
+            "16": "./images/clicounter-black-stopwatch.png",
+            "32": "./images/clicounter-black-stopwatch.png",
+            "48": "./images/clicounter-black-stopwatch.png",
+            "128": "./images/clicounter-black-stopwatch.png"
         }
     },
     "icons": {
-        "16": "./images/favicon.png",
-        "32": "./images/favicon.png",
-        "48": "./images/favicon.png",
-        "128": "./images/favicon.png"
+        "16": "./images/clicounter-black-stopwatch.png",
+        "32": "./images/clicounter-black-stopwatch.png",
+        "48": "./images/clicounter-black-stopwatch.png",
+        "128": "./images/clicounter-black-stopwatch.png"
     }
 }
