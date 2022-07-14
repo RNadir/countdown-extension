@@ -101,6 +101,12 @@ body {
     cursor: pointer
 }
 
+.control_button > img {
+    background-color: #365ee3;
+    border-radius: 50px;
+    padding: 2px;
+}
+
 .cards_wrapper {
     display: flex;
     justify-content: center;
@@ -171,7 +177,7 @@ body {
 
 .header_logo {
     width: 100%;
-    max-width: 300px
+    max-width: 250px;
 }
 
 .header_logo img {
@@ -194,27 +200,34 @@ body {
 
 .footer_wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     margin-top: auto;
     margin-bottom: 10px;
+    width: 100%;
+    /* color: rgba(0,0,0,0.2); */
 }
 
 .footer_links_wrapper {
-    /* color:blue; */
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
 
 .footer_link {
-    /* color:red; */
     margin: 5px 0px;
 }
 
 .footer_disclaimer {
     color: #007bff
+}
+
+.header_buttons_separataor{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    height: 30px;
+    margin: auto 0px;
 }
 
 @media screen and (max-width: 900px) {
